@@ -9,6 +9,7 @@ body{
 .note{
     font-size: 15px;
     color: black;
+    word-wrap: break-word;
 }
 .div_speed{
     float: left;
