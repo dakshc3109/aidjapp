@@ -75,7 +75,7 @@ function draw(){
 			music.rate(2);
 		}
 
-		else if(rightWristY > 400 && rightWristY<=500){
+		else if(rightWristY > 400){
 			document.getElementById("speed").innerHTML = "Speed: 2.5";
 			music.rate(2.5);
 		}
@@ -87,12 +87,12 @@ function draw(){
 	    inNumberLeftWristY = Number(leftWristY);
 	    withoutDecimalLeftWristY = floor(inNumberLeftWristY);
 	    console.log(withoutDecimalLeftWristY);
-	    //divide = withoutDecimalLeftWristY/1000;
+	    divide = withoutDecimalLeftWristY/1000;
 	    //volume = divide*2;
-	    volume = withoutDecimalLeftWristY/500;
-	    console.log("volume : "+volume);
-	    document.getElementById("volume").innerHTML = "Volume: "+volume;
-	    music.setVolume(volume);
+	    //volume = withoutDecimalLeftWristY/500;
+	    console.log("volume : "+divide);
+	    document.getElementById("volume").innerHTML = "Volume: "+divide;
+	    music.setVolume(divide);
 	}
 }
 
